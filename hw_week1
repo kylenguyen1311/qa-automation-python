@@ -1,0 +1,21 @@
+#Kyle
+#Remove duplication
+input = [1,2,1,4,5,2,7,8,9]
+output = []
+a = 0
+while (a < len(input)):
+    if input[a] not in output:
+        output.append(input[a])
+    a +=1
+print(output)
+ouput1 = []
+b=0
+c=0
+while (b<len(input)):
+    while (c<len(input)):
+        if input[b] == input[c]:
+            input.pop(c)
+        c+=1
+    b+=1
+print(input)
+
